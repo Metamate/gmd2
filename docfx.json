@@ -24,12 +24,21 @@
       "modern",
       "template"
     ],
+    "markdownEngineProperties": {
+      "markdigExtensions": [
+        "Abbreviations",
+        "Figures",
+        "CustomContainers",
+        "attributes"
+      ]
+    },
     "globalMetadata": {
       "_appName": "GMD2",
       "_appTitle": "GMD2",
       "_appFaviconPath": "images/favicon.ico",
       "_appLogoPath": "images/logo.png",
       "_appFooter": "You found a cookie! 🍪",
+      "_disableBreadcrumb": "true",
       "_enableSearch": true,
       "pdf": false
     }
