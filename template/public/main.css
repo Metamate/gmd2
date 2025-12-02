@@ -2,3 +2,20 @@ body {
   --bs-link-color-rgb: 212, 93, 53 !important;
   --bs-link-hover-color-rgb: 231, 60, 0 !important;
 }
+
+#affix ul li a.active,
+.affix ul li a.active,
+.sideaffix ul li a.active,
+#affix a.active,
+.affix a.active {
+  color: #d45d35;
+  font-weight: bold;
+  border-left: 2px solid #d45d35;
+  padding-left: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
