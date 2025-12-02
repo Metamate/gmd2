@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CSS | GMD2 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CSS | GMD2 ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="GMD2">
+            GMD2
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="css">CSS</h1>
+
+<p>In this session, we'll take our first steps into the world of CSS – Cascading Style Sheets. You'll learn how CSS helps us style and design web pages, from changing colors and fonts to adjusting alignments and spacing. Let's make the web look good!</p>
+<h2 id="preparation-">Preparation 📚</h2>
+<h3 id="css-basics">CSS Basics</h3>
+<p>In the first video, we'll explore the different ways you can apply CSS to your HTML, understand how inheritance works, and get familiar with some of the most common styling properties.</p>
+<iframe class="video" src="https://drive.google.com/file/d/1XvC8BMbY9lt2ZNJ-97nsWfANW2v4p-zW/preview" allow="autoplay" allowfullscreen></iframe>
+<p>You can read about the concepts in depth here:</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started#adding_css_to_our_document">Adding CSS to our document</a>{:target=&quot;_blank&quot;} <br>
+<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started#using_common_selectors">Using common selectors</a>{:target=&quot;_blank&quot;} <br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Inheritance">Inheritance</a>{:target=&quot;_blank&quot;} <br></p>
+<h3 id="colors">Colors</h3>
+<p>Next we'll look at how to work with colors in CSS. We'll cover three popular color formats: RGB, hex and HSL. You'll also get a quick intro to hexadecimal numbers along the way.</p>
+<iframe class="video" src="https://drive.google.com/file/d/1fimNcpaDhcWL5bdxnCWXbR1ozwEkdjKD/preview" allow="autoplay" allowfullscreen></iframe>
+<p>If you want to know more, web.dev has <a href="https://web.dev/learn/css/color">a good resource on colors</a>{:target=&quot;_blank&quot;}. <br></p>
+<h3 id="the-box-model">The Box Model</h3>
+<p>Let's explore the CSS box model — a core concept for understanding how elements are sized and spaced on a web page. You'll learn how content, padding, borders, and margins all fit together to shape every element on the screen.</p>
+<iframe class="video" src="https://drive.google.com/file/d/1jcLiZk18M21mjsUDfqBDMOYZrwh8Qunv/preview" allow="autoplay" allowfullscreen></iframe>
+<p>Web.dev also has <a href="https://web.dev/learn/css/box-model">a good resource on the box model</a>{:target=&quot;_blank&quot;} that you can check out.</p>
+<h3 id="css-selectors--specificity">CSS Selectors &amp; Specificity</h3>
+<p>Lastly, we'll look at CSS selectors and how they let you target specific elements on your page. You'll also learn about specificity and the cascade — the rules CSS uses to decide which styles win when there's a conflict.</p>
+<iframe class="video" src="https://drive.google.com/file/d/1a9kIszPbCU5wx7ZjStNavVKGzGz1o3Ir/preview" allow="autoplay" allowfullscreen></iframe>
+<p>The concepts are also covered on web.dev:</p>
+<p><a href="https://web.dev/learn/css/selectors">Selectors</a>{:target=&quot;_blank&quot;} <br>
+<a href="https://web.dev/learn/css/the-cascade">The Cascade</a>{:target=&quot;_blank&quot;} <br>
+<a href="https://web.dev/learn/css/specificity">Specificity</a>{:target=&quot;_blank&quot;} <br></p>
+<h2 id="exercises">Exercises</h2>
+<h3 id="even-more-you">Even More You</h3>
+<p>Make your personal website from last session truly your own by styling it:</p>
+<ol>
+<li>Set a background color for the entire page.</li>
+<li>Change the text color of specific elements (e.g., headings or paragraphs).</li>
+<li>Choose a different font by updating the font-family and adjusting the font-size for better readability.</li>
+<li>Center some of the content, such as the main heading or introduction text.</li>
+<li>Style the included tables.</li>
+<li>Include margin, padding and borders on relevant boxes.</li>
+<li>Use custom properties for your websites colors.</li>
+<li>Come up with more styling improvements to your site!</li>
+<li>Share your updated work in the comment section below.</li>
+</ol>
+<h3 id="box-sizing">Box Sizing</h3>
+<p>The HTML below contains two boxes. Change the width of the second box to match that of the first box.</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Box Sizing&lt;/title&gt;
+        &lt;style&gt;
+            .box {
+                text-align: center;
+                border: 10px solid;
+                padding: 50px;
+                margin: 20px;
+                width: 400px;
+            }
+
+            .alternate {
+                box-sizing: border-box;
+            }
+
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;box&quot;&gt;I use content-box box-sizing&lt;/div&gt;
+        &lt;div class=&quot;box alternate&quot;&gt;I use border-box box-sizing&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>??? note &quot;Solution&quot;
+<code>css .alternate { box-sizing: border-box; width: 520px; } </code></p>
+<h3 id="sizing-units">Sizing Units</h3>
+<p>CSS gives you many ways to size elements. The most common are:</p>
+<ul>
+<li><code>px</code> → absolute size in pixels</li>
+<li><code>%</code> → relative to the size of the parent element</li>
+<li><code>rem</code> → relative to the font size of the root (html)</li>
+<li><code>em</code> → relative to the font size of the element</li>
+</ul>
+<p>Experiment with the website below, answering the following questions:</p>
+<ul>
+<li>What happens when you change the font size for the html element? Why?</li>
+<li>Change the width of the inner box to 200 pixels. How is this different from 50% here?</li>
+<li>Change the font-size unit of the inner element from rem to em. What happens? Why?</li>
+<li>Which unit scales when resizing the browser window?</li>
+<li>Why might rem be better for consistent typography across the site?</li>
+<li>What would be the issue of using pixel units across the site?</li>
+<li>When would you use pixels instead of relative units?</li>
+</ul>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            html {
+                font-size: 16px;
+            }
+
+            .outer {
+                width: 400px;
+                height: 200px;
+                background-color: lightblue;
+                padding: 20px;
+                font-size: 2em; 
+            }
+
+            .inner {
+                width: 50%;
+                height: 50%; 
+                background-color: coral;
+                font-size: 2rem; 
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;outer&quot;&gt;
+            &lt;div class=&quot;inner&quot;&gt;Inner box&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="a-taste-for-selectors">A Taste For Selectors</h3>
+<p>To practice your CSS selector skills, try out <a href="https://flukeout.github.io/">CSS Diner</a>{:target=&quot;_blank&quot;} — a game where you have to select the right elements on a dining table using CSS!</p>
+<h3 id="a-navigation-bar">A Navigation Bar</h3>
+<p>A navigation bar should be a list of links! Build a horizontal navigation bar using the list below. Style the bar with background color, spacing, and hover effects, and create a style that highlights the active page link.</p>
+<pre><code class="lang-html">&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;services.html&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+<p>Here is an example of what the navigation bar could look like:</p>
+<img style="display: block; margin: auto;" src="https://github.com/KasperKnop/WEB1/blob/main/resources/navbar.png?raw=true">
+<p>It might be worth noting that you can use the <code>display</code> property to set whether an element is treated as a block or inline box. List items do not have markers when they are treated as inline elements.</p>
+<p>??? note &quot;Example Solution&quot;
+```css
+nav {
+text-align: center;
+font-family: sans-serif;
+font-weight: bold;
+background: #2196f3;
+padding-block: 1rem;
+}</p>
+<pre><code>nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background: #1976d275;
+}
+
+nav a.active {
+    background: #1976d2;
+}
+```
+</code></pre>
+<h3 id="css-zen-garden">CSS Zen Garden</h3>
+<p>In this exercise, you'll use CSS to redesign the <a href="https://csszengarden.com/">CSS Zen Garden</a>{:target=&quot;_blank&quot;} webpage. <a href="https://csszengarden.com/examples/index">The HTML</a>{:target=&quot;_blank&quot;} stays the same — your task is to transform the look entirely through styling. We haven't covered everything yet (like layout techniques), so don't worry if your version isn't as elaborate as the examples on the site. Focus on practicing what you know and exploring what's possible with CSS!</p>
+<p>When you're done, host your site and share the link in the comment section below!</p>
+<h3 id="nice-work">Nice Work</h3>
+<p>Take a few minutes to browse the work of your classmates. Leave a comment if something catches your attention :slight_smile:</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          You found a cookie! 🍪
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
