@@ -2,8 +2,6 @@
 
 ## How to take the course
 
-
-
 ## Some Text
 
 ## Some More Text

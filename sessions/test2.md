@@ -120,10 +120,6 @@ To install the C# Dev Kit extension, perform the following:
 3. Enter `C#` in the *Search Box*
 4. Click install for the *C# Dev Kit* extension.
 
-| ![Figure 2-1: The C# Dev Kit Extension listed in Visual Studio Code](./images/devkit-extension.png) |
-| :-------------------------------------------------------------------------------------------------: |
-|                **Figure 2-1: The C# Dev Kit Extension listed in Visual Studio Code**                |
-
 > [!NOTE]  
 > When you search `C#` in the *Extension Panel* you may notice there is the C# Dev Kit extension and a base standard C# extension. When installing the C# Dev Kit extension, the base extension will also be installed as a requirement.
 
@@ -146,10 +142,6 @@ The .NET MAUI extension adds features for building mobile apps, including:
 * F5 debugging support - Debug your MonoGame mobile apps on emulators, simulators, and physical devices
 * Easy target switching - Change debug/deploy targets between different mobile platforms
 * Enhanced C# Dev Kit integration - Leverages Solution Explorer, Test Explorer, and advanced language features
-
-| ![Figure 2-2: The .NET MAUI Extension listed in Visual Studio Code](./images/maui-extension.png) |
-| :-------------------------------------------------------------------------------------------------: |
-|                **Figure 2-2: The .NET MAUI Extension listed in Visual Studio Code**                |
 
 > [!NOTE]
 > This extension is recommended if you wish to do iOS or Android development. It is required for debugging support when working on mobile games.
@@ -213,16 +205,6 @@ With your development environment setup, it is time to create your first MonoGam
 8. Finally, select the *Create Project* prompt.
 
 After selecting *Create Project*, a new C# project will be generated based on the chosen MonoGame template and opened automatically in VSCode.
-
-| ![Figure 2-3: A new MonoGame project after being created in Visual Studio Code](./images/vscode.png) |
-| :--------------------------------------------------------------------------------------------------: |
-|           **Figure 2-3: A new MonoGame project after being created in Visual Studio Code**           |
-
-Now that we have the project created, press the `F5` key on your keyboard, or choose *Run > Start Debugging* from the top menu. If prompted for a configuration, choose *C#*. The project will compile and run, displaying a screen similar to the following:
-
-| ![Figure 2-4: The default MonoGame cornflower blue game window](./images/game-window.png) |
-| :---------------------------------------------------------------------------------------: |
-|             **Figure 2-4: The default MonoGame cornflower blue game window**              |
 
 Be amazed, the default MonoGame Cornflower Blue game window. You have just created your very first MonoGame application. While there is not much happening here visually, there is a lot going on behind the scenes that the MonoGame framework is handling for you. When you ran the application, the following occurred:
 

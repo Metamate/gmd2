@@ -41,7 +41,7 @@
       "_appLogoPath": "images/logo.png",
       "_appFooter": "You found a cookie! 🍪",
       "_enableSearch": true,
-      "_disableToc": false,
+      "_disableContribution": true,
       "pdf": false
     },
     "fileMetadata": {
@@ -49,16 +49,9 @@
         "/*.md": true,
         "/index.md": false
       },
-      "_disableToc": {
-        "/*.md": true,
-        "/index.md": false
-      },
       "_disableBreadcrumb": {
         "/*.md": true,
         "/index.md": false
-      },
-      "_disableContribution": {
-        "/*.md": true
       }
     }
   }

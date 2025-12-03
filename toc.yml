@@ -1,8 +1,4 @@
-- name: Assignment
-  href: assignment.md
-- name: Games
-  href: games.md
+- href: assignment.md
+- href: games.md
 - name: About
   href: about.md
-- name: Help
-  href: help.md
