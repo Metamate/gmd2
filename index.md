@@ -2,7 +2,9 @@
 
 ## How to take the course
 
-## Some Text
+## Course Literature
+
+
 
 ## Some More Text
 
