@@ -46,3 +46,5 @@ Get an understanding of what is game architecture and design. We end up with a w
 ## Collision Detection
 
 ## Sound Effects
+
+You can make your own 8-bit style sound effects using [bfxr.net](https://www.bfxr.net/).
