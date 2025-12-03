@@ -24,3 +24,8 @@ body {
 /* @view-transition {
   navigation: none;
 } */
+
+.navbar-brand img {
+  height: 33px;
+  width: auto;
+}
