@@ -4,10 +4,7 @@ body {
 }
 
 #affix ul li a.active,
-.affix ul li a.active,
-.sideaffix ul li a.active,
-#affix a.active,
-.affix a.active {
+#affix a.active {
   color: #d45d35;
   font-weight: bold;
   border-left: 2px solid #d45d35;
@@ -18,4 +15,12 @@ body {
 .video {
   width: 100%;
   aspect-ratio: 16 / 9;
+}
+
+#breadcrumb {
+  min-height: 40px;
+}
+
+@view-transition {
+  navigation: none;
 }

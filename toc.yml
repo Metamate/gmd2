@@ -1,6 +1,10 @@
 - name: Sessions
   href: sessions/
-- name: About
-  href: about.md
+- name: Assignment
+  href: assignment.md
 - name: Student Games
   href: student-games.md
+- name: Help
+  href: help.md
+- name: About
+  href: about.md

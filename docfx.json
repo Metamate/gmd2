@@ -40,6 +40,17 @@
       "_appFooter": "You found a cookie! 🍪",
       "_enableSearch": true,
       "pdf": false
+    },
+    "fileMetadata": {
+      "_disableNextArticle": {
+        "/*.md": true
+      },
+      "_disableBreadcrumb": {
+        "/*.md": true
+      },
+      "_disableContribution": {
+        "/index.md": true
+      }
     }
   }
 }

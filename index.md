@@ -1,6 +1,8 @@
 # Welcome to **Game Development 2**
 
-## Introduction
+## How to take the course
+
+
 
 ## Some Text
 
