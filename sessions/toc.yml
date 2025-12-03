@@ -1,5 +1,15 @@
+- name: Home
+  href: ~/index.md
 - name: Introduction
   href: index.md
+- name: Session 1
+  href: session01/index.md
+  expanded: true
+  items:
+    - name: Stuff
+      href: session01/stuff.md
+    - name: More Stuff
+      href: session01/morestuff.md
 - name: Test
   href: test.md
 - name: Maybe

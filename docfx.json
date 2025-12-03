@@ -14,7 +14,9 @@
     "resource": [
       {
         "files": [
-          "**/images/**", "**/media/**", "**/snippets/**"
+          "**/images/**",
+          "**/media/**",
+          "**/snippets/**"
         ]
       }
     ],
@@ -39,17 +41,24 @@
       "_appLogoPath": "images/logo.png",
       "_appFooter": "You found a cookie! 🍪",
       "_enableSearch": true,
+      "_disableToc": false,
       "pdf": false
     },
     "fileMetadata": {
       "_disableNextArticle": {
-        "/*.md": true
+        "/*.md": true,
+        "/index.md": false
+      },
+      "_disableToc": {
+        "/*.md": true,
+        "/index.md": false
       },
       "_disableBreadcrumb": {
-        "/*.md": true
+        "/*.md": true,
+        "/index.md": false
       },
       "_disableContribution": {
-        "/index.md": true
+        "/*.md": true
       }
     }
   }
