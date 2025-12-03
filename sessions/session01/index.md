@@ -27,6 +27,10 @@ Get an understanding of what is game architecture and design. We end up with a w
 - [Game Loop Pattern](https://gameprogrammingpatterns.com/game-loop.html)
 - [Update Method Pattern](https://gameprogrammingpatterns.com/update-method.html)
 
+| ![Figure 1-1: Lifecycle of a MonoGame game](~/images/monogame-lifecycle.png) |
+| :--------------------------------------------------------------------------: |
+|                 **Figure 1-1: Lifecycle of a MonoGame game**                 |
+
 ## Drawing Sprites
 
 - [What is a sprite?](https://docs.monogame.net/articles/getting_to_know/whatis/graphics/WhatIs_Sprite.html)
