@@ -1,7 +1,5 @@
 import highlightActiveHeader from "./highlightActiveHeader.js"
-
-
-
+import questionAnswer from "./questionAnswer.js"
 
 export default {
   iconLinks: [
@@ -11,5 +9,8 @@ export default {
       title: "GitHub",
     },
   ],
-  start: highlightActiveHeader
+  start: () => {
+    highlightActiveHeader()
+    questionAnswer()
+  },
 }

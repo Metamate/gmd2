@@ -31,6 +31,8 @@
 | :--------------------------------------------------------------------------: |
 |                 **Figure 1-1: Lifecycle of a MonoGame game**                 |
 
+For a more comprehensible explanation of the monogame game loop, see [What is the Game Loop](https://docs.monogame.net/articles/getting_to_know/whatis/game_loop/index.html).
+
 ## Drawing Sprites
 
 - [What is a sprite?](https://docs.monogame.net/articles/getting_to_know/whatis/graphics/WhatIs_Sprite.html)

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+const questionAnswer = () => {
     // Find all question-answer containers
     const containers = document.querySelectorAll('.question-answer');
 
@@ -25,4 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.remove('revealed');
         });
     });
-});
+};
+
+export default questionAnswer;
