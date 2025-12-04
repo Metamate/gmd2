@@ -14,9 +14,9 @@
     "resource": [
       {
         "files": [
-          "**/images/**",
-          "**/media/**",
-          "**/snippets/**"
+          "images/**",
+          "media/**",
+          "snippets/**"
         ]
       }
     ],
