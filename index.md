@@ -26,3 +26,13 @@ This approach allows you to learn theory at your own pace, enabling us to focus 
 ## Course Overview
 
 Overview of the course content.
+
+## Test Your Knowledge
+
+1. What is the difference between a framework and an engine?
+
+:::question-answer
+
+A framework provides a structure and set of tools for building applications, while an engine is a complete system that handles core functionality like rendering and physics.
+
+:::
