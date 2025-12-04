@@ -1,1 +1,4 @@
-# 10 3D Game?
+# 11 Geometry Wars
+
+- Shaders & Effects
+- Some design pattern?
