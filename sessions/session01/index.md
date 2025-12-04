@@ -2,7 +2,7 @@
 
 ## Today's Goal
 
-Get an understanding of what is game architecture and design. We end up with a working, very basic game.
+"Make it work". We end up with a working, very basic game.
 
 ## Today's Topics
 
@@ -15,10 +15,6 @@ Get an understanding of what is game architecture and design. We end up with a w
 - Encapsulation
 - Collision Detection
 - Sound Effects
-
-## Game Architecture & Design
-
-- [Architecture, Performance, and Games](https://gameprogrammingpatterns.com/architecture-performance-and-games.html)
 
 ## MonoGame
 
