@@ -20,7 +20,11 @@ Get an understanding of what is game architecture and design. We end up with a w
 
 - [Architecture, Performance, and Games](https://gameprogrammingpatterns.com/architecture-performance-and-games.html)
 
-## MonoGame (brief history, XNA)
+## MonoGame
+
+- [What is MonoGame?](https://docs.monogame.net/articles/tutorials/building_2d_games/01_what_is_monogame/index.html)
+- [Getting Started](https://docs.monogame.net/articles/tutorials/building_2d_games/02_getting_started/index.html)
+- [The Game1 File](https://docs.monogame.net/articles/tutorials/building_2d_games/03_the_game1_file/index.html)
 
 ## Game Loop
 
