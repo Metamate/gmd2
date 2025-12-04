@@ -1,4 +1,11 @@
-- href: assignment.md
-- href: games.md
+- name: Home
+  href: index.md
+- name: Sessions
+  href: sessions/
+- href: resources.md
+- href: project.md
+- href: exam.md
+- href: faq.md
 - name: About
   href: about.md
+- href: games.md

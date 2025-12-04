@@ -1,6 +1,6 @@
 - name: Table of Contents
-- name: Welcome
-  href: ~/index.md
+# - name: Welcome
+#   href: ~/index.md
 - href: session01/index.md
 - href: session02/index.md
 - href: session03/index.md
@@ -13,11 +13,9 @@
 - href: session10/index.md
 - href: session11/index.md
 - href: session12/index.md
-- href: test.md
-- href: test2.md
-# Example of nested content
-# - href: session01/index.md
-#   expanded: true
-#   items:
-#     - href: session01/stuff.md
-#     - href: session01/morestuff.md
+
+- href: session13/index.md
+  expanded: true
+  items:
+    - href: session13/index2.md
+    - href: session13/index3.md

@@ -1,5 +1,7 @@
 # 01 Pong
 
+Bla bla intro weee. Maybe add some spacing between headline, css ftw.
+
 ## Today's Goal
 
 "Make it work". We end up with a working, very basic game.

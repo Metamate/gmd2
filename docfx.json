@@ -42,6 +42,7 @@
       "_appFooter": "You found a cookie! 🍪",
       "_enableSearch": true,
       "_disableContribution": true,
+      "_disableTocFilter": true,
       "_enableFooter": false,
       "pdf": false
     },
@@ -51,8 +52,7 @@
         "/index.md": false
       },
       "_disableBreadcrumb": {
-        "/*.md": true,
-        "/index.md": false
+        "/*.md": true
       }
     }
   }

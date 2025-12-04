@@ -21,6 +21,10 @@
   --bs-link-hover-color-rgb: var(--mg-orange-dark-rgb);
 }
 
+h1 {
+  margin-bottom: 1.5rem;
+}
+
 #affix ul li a.active,
 #affix a.active {
   color: #d45d35;
@@ -35,7 +39,7 @@
   aspect-ratio: 16 / 9;
 }
 
-#breadcrumb {
+.actionbar {
   min-height: 2.5rem;
 }
 
