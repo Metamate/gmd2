@@ -8,10 +8,18 @@ Use the sidebar to navigate through the course sessions, which include preparati
 
 The course spans 12 sessions. Each session typically follows this structure:
 
+```mermaid
+graph LR
+    A[Preparation] --> B[Recap]
+    B --> C[Exercises]
+    C --> D[Review & Discussion]
+```
+
 1.  **Preparation**: Engage with assigned learning paths and readings before class. We cover most theoretical content here to maximize practical time during class.
 2.  **Recap**: A focused review of essential concepts to kick off the class.
 3.  **Exercises**: Hands-on practice to reinforce and expand your skills.
 4.  **Review & Discussion**: Collaborative review of exercises and solutions.
+
 
 This approach allows you to learn theory at your own pace, enabling us to focus class time on practical application and problem-solving. Active preparation and participation is key to your success in this course.
 

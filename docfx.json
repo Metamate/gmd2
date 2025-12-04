@@ -42,6 +42,7 @@
       "_appFooter": "You found a cookie! 🍪",
       "_enableSearch": true,
       "_disableContribution": true,
+      "_enableFooter": false,
       "pdf": false
     },
     "fileMetadata": {
