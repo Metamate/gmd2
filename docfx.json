@@ -52,7 +52,8 @@
         "/*.md": true
       },
       "_disableBreadcrumb": {
-        "/*.md": true
+        "/*.md": true,
+        "sessions/index.md": true
       }
     }
   }
