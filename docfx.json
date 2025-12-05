@@ -42,14 +42,14 @@
       "_appFooter": "You found a cookie! 🍪",
       "_enableSearch": true,
       "_disableContribution": true,
+      "_disableFooter": true,
+      "_disableToc": false,
       "_disableTocFilter": true,
-      "_enableFooter": false,
       "pdf": false
     },
     "fileMetadata": {
       "_disableNextArticle": {
-        "/*.md": true,
-        "/index.md": false
+        "/*.md": true
       },
       "_disableBreadcrumb": {
         "/*.md": true

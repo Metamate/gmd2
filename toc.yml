@@ -1,11 +1,12 @@
 - name: Home
   href: index.md
 - name: Sessions
-  href: sessions/
+  href: sessions/index.md
 - href: resources.md
 - href: project.md
 - href: exam.md
 - href: faq.md
 - name: About
   href: about.md
-- href: games.md
+- name: Games
+  href: games.md

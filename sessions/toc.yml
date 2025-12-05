@@ -1,6 +1,4 @@
-- name: Table of Contents
-# - name: Welcome
-#   href: ~/index.md
+- name: Sessions
 - href: session01/index.md
 - href: session02/index.md
 - href: session03/index.md
