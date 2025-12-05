@@ -12,8 +12,9 @@
 - href: session11/index.md
 - href: session12/index.md
 
-- href: session13/index.md
-  expanded: true
-  items:
-    - href: session13/index2.md
-    - href: session13/index3.md
+# Example of nested navigation
+# - href: session13/index.md
+#   expanded: true
+#   items:
+#     - href: session13/page1.md
+#     - href: session13/page2.md

@@ -1,8 +1,10 @@
 :root {
   --mg-orange-dark-rgb: 231, 60, 0;
   --mg-orange-light-rgb: 212, 93, 53;
+  --theme-secondary-rgb: 32, 164, 230;
   --mg-orange-dark: rgba(var(--mg-orange-dark-rgb), 1);
   --mg-orange-light: rgba(var(--mg-orange-light-rgb), 1);
+  --theme-secondary: rgba(var(--theme-secondary-rgb), 1);
 }
 
 [data-bs-theme="light"] {
@@ -40,13 +42,17 @@ h1 {
 }
 
 .actionbar {
-  min-height: 2.5rem;
+  min-height: 3rem;
 }
 
 .navbar-brand img {
   height: 2rem;
   width: auto;
   margin-right: 0.5rem;
+}
+
+#search-results>.sr-items .sr-item>.item-href {
+  color: var(--theme-secondary);
 }
 
 /*******************************************************************************
