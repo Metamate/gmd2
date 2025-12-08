@@ -2,11 +2,11 @@
   href: index.md
 - name: Sessions
   href: sessions/index.md
-- href: resources.md
-- href: project.md
-- href: exam.md
-- href: faq.md
+- href: pages/resources.md
+- href: pages/project.md
+- href: pages/exam.md
+- href: pages/faq.md
 - name: About
-  href: about.md
+  href: pages/about.md
 - name: Games
-  href: games.md
+  href: pages/games.md

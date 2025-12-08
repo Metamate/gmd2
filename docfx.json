@@ -50,10 +50,12 @@
     "fileMetadata": {
       "_disableNextArticle": {
         "/*.md": true,
+        "pages/*.md": true,
         "sessions/index.md": true
       },
       "_disableBreadcrumb": {
         "/*.md": true,
+        "pages/*.md": true,
         "sessions/index.md": true
       }
     }
