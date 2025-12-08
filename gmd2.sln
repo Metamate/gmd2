@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sessions", "sessions", "{7C30C082-D4FF-5AB1-128F-BE070B4AE118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "session02", "session02", "{8A463094-D6C5-3BAA-1A14-5529BCC0C0AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyBirdStatePattern", "sessions\session02\code\FlappyBirdStatePattern.csproj", "{EBC11FBD-3BEE-BE33-7E0B-24D3A5307EC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC11FBD-3BEE-BE33-7E0B-24D3A5307EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC11FBD-3BEE-BE33-7E0B-24D3A5307EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC11FBD-3BEE-BE33-7E0B-24D3A5307EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC11FBD-3BEE-BE33-7E0B-24D3A5307EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A463094-D6C5-3BAA-1A14-5529BCC0C0AE} = {7C30C082-D4FF-5AB1-128F-BE070B4AE118}
+		{EBC11FBD-3BEE-BE33-7E0B-24D3A5307EC1} = {8A463094-D6C5-3BAA-1A14-5529BCC0C0AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ED3686E-3613-474B-B856-DFB52F075929}
+	EndGlobalSection
+EndGlobal

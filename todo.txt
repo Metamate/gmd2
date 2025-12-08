@@ -1,5 +1,0 @@
-fix "in this article" to maybe say "H1" of the current page - easy ai prompt
-
-make same toc appear on all pages.. but hoow - refactor 
-
-remove "table of contents" text?
