@@ -57,7 +57,9 @@ export default function details() {
                      const textAfter = text.substring(textSplitIndex); 
                      
                      if (textBefore.trim()) summary.appendChild(document.createTextNode(textBefore));
-                     if (textAfter.trim()) content.appendChild(document.createTextNode(textAfter.trim()));
+                     // Only strip LEADING whitespace (newline + indent), preserve TRAILING space for subsequent nodes
+                     const cleanTextAfter = textAfter.replace(/^\s+/, '');
+                     if (cleanTextAfter) content.appendChild(document.createTextNode(cleanTextAfter));
                  }
                  // If BR, we effectively drop it as it consumed by the split action
             } else {
