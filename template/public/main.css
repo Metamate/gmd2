@@ -163,10 +163,17 @@ details.generated-details > div {
 }
 
 details.generated-details > summary::before {
-  content: "\F505";
   font-family: bootstrap-icons;
   color: #fff;
   font-size: 1.2rem;
+}
+
+details.generated-details.details-question > summary::before {
+  content: "\F505";
+}
+
+details.generated-details.details-note > summary::before {
+  content: "\F431";
 }
 
 details.generated-details > summary::after {

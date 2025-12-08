@@ -1,12 +1,21 @@
 export default function details() {
   document.querySelectorAll('p').forEach(p => {
-    // Quick check: does it look like a details block?
-    if (!p.textContent.trim().startsWith('???')) return;
+    // Regex: ??? (type) "Title"
+    // Captures: group 1 = type (question|note), group 2 = title
+    const match = p.textContent.trim().match(/^\?{3}\s+(question|note)\s+"(.*?)"/);
+    if (!match) return;
+
+    const type = match[1];
+    const title = match[2];
 
     // 1. Detect Split Point (Newline or BR)
     const childNodes = Array.from(p.childNodes);
     let splitNodeIndex = -1; 
-    let textSplitIndex = -1; // Index within the text node
+    let textSplitIndex = -1; 
+    
+    // Find where the title line ends (it ends at the first newline or BR)
+    // We assume the first text node contains the syntax ??? type "title"
+    // and potentially a newline if inline content follows.
     
     for (let i = 0; i < childNodes.length; i++) {
         const node = childNodes[i];
@@ -25,17 +34,18 @@ export default function details() {
 
     // 2. Build Components
     const details = document.createElement('details');
-    details.className = 'generated-details';
+    details.className = `generated-details details-${type}`;
     
     const summary = document.createElement('summary');
-    // Direct title content (styling handles the icons via pseudo-elements)
+    summary.textContent = title; // Set explicit title from regex
     
     const content = document.createElement('div');
     
     // 3. Distribute Nodes
     if (splitNodeIndex === -1) {
-        // Inline Mode: No split inside paragraph. All content is summary.
-        childNodes.forEach(node => summary.appendChild(node));
+        // No split in this paragraph (content likely in next sibling)
+        // We do NOT append the childNodes to summary because they contain the syntax text.
+        // The summary title is already set.
         
         // Check for Block Mode (content is in next sibling element)
         const next = p.nextElementSibling;
@@ -43,45 +53,43 @@ export default function details() {
             content.appendChild(next);
         }
     } else {
-        // Split Mode: Distribute nodes based on split point
+        // Split Mode: content follows on new line in same paragraph
         for (let i = 0; i < childNodes.length; i++) {
             const node = childNodes[i];
             
             if (i < splitNodeIndex) {
-                summary.appendChild(node);
+                // Determine if this logic still holds. 
+                // The syntax '??? type "title"' is in the first text node(s).
+                // We typically discard nodes BEFORE the split because they are part of the declaration line.
+                // However, if there are other nodes (like spans/formatting) in the title...
+                // The regex approach implies the title is a string. Markdown formatting *within* the quote 
+                // might be parsed as separate nodes. 
+                // BUT, parsing `??? type "title"` relies on text matching. 
+                // Markdown parsers might handle `type` and `"title"` as plain text.
+                // Simpler assumption: The entire first line is consumed by the declaration.
+                
+                // Discard nodes before split point (they are the declaration)
+                continue; 
             } else if (i === splitNodeIndex) {
                  if (textSplitIndex !== -1) {
                      // Text node split
                      const text = node.textContent;
-                     const textBefore = text.substring(0, textSplitIndex);
+                     // Before split is the declaration line -> discard
+                     // After split is content
                      const textAfter = text.substring(textSplitIndex); 
                      
-                     if (textBefore.trim()) summary.appendChild(document.createTextNode(textBefore));
-                     // Only strip LEADING whitespace (newline + indent), preserve TRAILING space for subsequent nodes
+                     // Only strip LEADING whitespace (newline + indent), preserve TRAILING space
                      const cleanTextAfter = textAfter.replace(/^\s+/, '');
                      if (cleanTextAfter) content.appendChild(document.createTextNode(cleanTextAfter));
                  }
-                 // If BR, we effectively drop it as it consumed by the split action
+                 // If BR, consumed
             } else {
                 content.appendChild(node);
             }
         }
     }
     
-    // 4. Clean '???' from Title
-    // Find the first text node in the summary and strip the prefix
-    const summaryNodes = Array.from(summary.childNodes);
-    for (const node of summaryNodes) {
-        if (node.nodeType === Node.TEXT_NODE) {
-            // Regex handles optional whitespace and the three question marks
-            // Only replace the START of the text
-            const newText = node.textContent.replace(/^\s*\?{3}\s*/, '');
-            if (newText !== node.textContent) {
-                node.textContent = newText;
-                break; // Only strip once
-            }
-        }
-    }
+    // 4. (Clean step removed as logic is integrated)
 
     details.appendChild(summary);
     details.appendChild(content);
