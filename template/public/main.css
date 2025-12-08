@@ -145,8 +145,9 @@ details.generated-details > summary {
   position: relative;
   display: flex;
   align-items: center; 
-  padding: 0.5rem 1rem; /* Internal padding */
-  margin: 0; /* No negative margins needed */
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
   
   background-color: var(--mg-orange-primary);
   color: #fff;
@@ -158,12 +159,10 @@ details.generated-details > summary::-webkit-details-marker {
   display: none;
 }
 
-/* Content Div Styling */
 details.generated-details > div {
   padding: 1rem;
 }
 
-/* 1. Icon (?) - Left Side */
 details.generated-details > summary::before {
   content: "?";
   display: flex;
@@ -171,7 +170,6 @@ details.generated-details > summary::before {
   justify-content: center;
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.5rem; 
   flex-shrink: 0;
   
   background-color: #fff;
@@ -181,7 +179,6 @@ details.generated-details > summary::before {
   font-weight: bold;
 }
 
-/* 2. Toggle Arrow (Chevron) - Right Side */
 details.generated-details > summary::after {
   content: "";
   display: inline-block;
@@ -193,7 +190,6 @@ details.generated-details > summary::after {
   
   background-color: currentColor; 
   
-  /* SVG Chevron Right (Material Design) */
   --icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>');
   -webkit-mask: var(--icon) no-repeat center / contain;
   mask: var(--icon) no-repeat center / contain;
@@ -201,10 +197,4 @@ details.generated-details > summary::after {
 
 details.generated-details[open] > summary::after {
   transform: rotate(90deg);
-}
-
-details.generated-details[open] > summary {
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(var(--theme-secondary-rgb), 0.2);
 }
