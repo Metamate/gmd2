@@ -128,10 +128,8 @@ details.generated-details {
   border: 0.075rem solid var(--mg-orange-primary);
   border-radius: 0.2rem;
   margin: 1rem 0;
-  padding: 0; /* Content padding moved to inner div */
   background-color: var(--bs-body-bg);
   transition: box-shadow 0.2s ease;
-  overflow: hidden; /* Ensure summary background fills corners */
 }
 
 details.generated-details:focus-within {
