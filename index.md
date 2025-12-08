@@ -4,8 +4,6 @@ Welcome to the course website for **GMD2** (Game Development 2). This course exp
 
 Use the sidebar to navigate through the course sessions, which include preparation materials and practical exercises.
 
-![banner](images/banner.png)
-
 ## Course Structure
 
 The course spans 12 sessions. Each session typically follows this structure:
