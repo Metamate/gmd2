@@ -9,6 +9,7 @@
 
 [data-bs-theme="light"] {
   --mg-orange-primary: var(--mg-orange-dark);
+  --mg-orange-primary-rgb: var(--mg-orange-dark-rgb);
   --mg-orange-secondary: var(--mg-orange-light);
   --mg-orange-secondary-rgb: var(--mg-orange-light-rgb);
 
@@ -18,6 +19,7 @@
 
 [data-bs-theme="dark"] {
   --mg-orange-primary: var(--mg-orange-light);
+  --mg-orange-primary-rgb: var(--mg-orange-light-rgb);
   --mg-orange-secondary: var(--mg-orange-dark);
   --mg-orange-secondary-rgb: var(--mg-orange-dark-rgb);
 
@@ -138,7 +140,6 @@ details.generated-details:focus-within {
 
 details.generated-details > summary {
   list-style: none;
-  font-weight: bold;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -146,7 +147,6 @@ details.generated-details > summary {
   gap: 1rem;
   padding: 0.5rem 1rem;
   margin: 0;
-  
   background-color: var(--mg-orange-primary);
   color: #fff;
   outline: none;
@@ -159,38 +159,23 @@ details.generated-details > summary::-webkit-details-marker {
 
 details.generated-details > div {
   padding: 1rem;
+  background-color: rgba(var(--mg-orange-primary-rgb), 0.4) !important;
 }
 
 details.generated-details > summary::before {
-  content: "?";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  flex-shrink: 0;
-  
-  background-color: #fff;
-  color: var(--mg-orange-primary);
-  border-radius: 50%;
-  font-size: 0.9rem;
-  font-weight: bold;
+  content: "\F505";
+  font-family: bootstrap-icons;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 details.generated-details > summary::after {
-  content: "";
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  content: "\F285";
+  font-family: bootstrap-icons;
+  color: #fff;
   margin-left: auto; /* Push to right */
   flex-shrink: 0;
   transition: transform 0.2s ease;
-  
-  background-color: currentColor; 
-  
-  --icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>');
-  -webkit-mask: var(--icon) no-repeat center / contain;
-  mask: var(--icon) no-repeat center / contain;
 }
 
 details.generated-details[open] > summary::after {
