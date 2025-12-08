@@ -1,9 +1,20 @@
 # 02 Flappy Bird
 
-- Game Architecture & Design
+- Images (Sprites)
+- Infinite Scrolling
+- "Games Are Illusions"
+- Class libraries
 - Procedural Generation
-- State Machines
-- Interfaces
+- Managing State, State Machines
+  - State Pattern
+- Interfaces ?
+- State pattern here or wait for great mario example? (maybe basic here and then involve into state machine)
+- Singleton pattern (through the game library core class)
+- Service Locator (built-in through GameServices objet on Game class)
+
+## Today's Goal
+
+We look at state management and building out our "game engine" through a class library / building a game engine of reusable components.
 
 ## Game Architecture & Design
 
