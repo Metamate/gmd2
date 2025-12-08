@@ -10,6 +10,7 @@
 [data-bs-theme="light"] {
   --mg-orange-primary: var(--mg-orange-dark);
   --mg-orange-secondary: var(--mg-orange-light);
+  --mg-orange-secondary-rgb: var(--mg-orange-light-rgb);
 
   --bs-link-color-rgb: var(--mg-orange-dark-rgb);
   --bs-link-hover-color-rgb: var(--mg-orange-light-rgb);
@@ -18,6 +19,7 @@
 [data-bs-theme="dark"] {
   --mg-orange-primary: var(--mg-orange-light);
   --mg-orange-secondary: var(--mg-orange-dark);
+  --mg-orange-secondary-rgb: var(--mg-orange-dark-rgb);
 
   --bs-link-color-rgb: var(--mg-orange-light-rgb);
   --bs-link-hover-color-rgb: var(--mg-orange-dark-rgb);
@@ -123,12 +125,16 @@ h1 {
 *******************************************************************************/
 
 details.generated-details {
-  border: 1px solid var(--theme-secondary, #20a4e6);
-  border-left-width: 4px;
+  border: 2px solid var(--mg-orange-primary);
   border-radius: 4px;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   background-color: var(--bs-body-bg);
+  transition: box-shadow 0.2s ease;
+}
+
+details.generated-details:focus-within {
+  box-shadow: 0 0 0 4px rgba(var(--mg-orange-secondary-rgb), 0.25);
 }
 
 details.generated-details > summary {
@@ -139,9 +145,8 @@ details.generated-details > summary {
   /* Use flexbox for robust alignment */
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem; /* Space between icon and text */
-  padding-left: 0; /* Padding handled by gap/flex */
-  color: var(--theme-secondary, #20a4e6);
+  padding-left: 0;
+  color: var(--mg-orange-primary);
   outline: none;
 }
 
@@ -150,44 +155,37 @@ details.generated-details > summary::-webkit-details-marker {
   display: none;
 }
 
-/* Icon (Using a question mark circle) */
+/* 1. Icon (?) - Left Side */
 details.generated-details > summary::before {
   content: "?";
-  /* Position static to participate in flex flow */
-  position: static;
-  width: 1.5rem;
-  height: 1.5rem;
-  /* Prevent icon from shrinking */
-  flex-shrink: 0;
-  
-  background-color: var(--theme-secondary, #20a4e6);
-  color: #fff;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem; /* Space between icon and text */
+  flex-shrink: 0;
+  
+  background-color: var(--mg-orange-primary);
+  color: #fff;
+  border-radius: 50%;
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-details.generated-details[open] > summary {
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(var(--theme-secondary-rgb), 0.2);
-}
-
-/* Toggle Arrow */
+/* 2. Toggle Arrow (Chevron) - Right Side */
 details.generated-details > summary::after {
   content: "";
-  margin-left: auto; /* Push to the right */
-  transition: transform 0.2s ease;
-  flex-shrink: 0;
-  
+  display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: currentColor; /* Matches text color */
+  margin-left: auto; /* Push to right */
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
   
-  /* SVG Chevron Right */
+  background-color: currentColor; 
+  
+  /* SVG Chevron Right (Material Design) */
   --icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>');
   -webkit-mask: var(--icon) no-repeat center / contain;
   mask: var(--icon) no-repeat center / contain;
@@ -195,4 +193,10 @@ details.generated-details > summary::after {
 
 details.generated-details[open] > summary::after {
   transform: rotate(90deg);
+}
+
+details.generated-details[open] > summary {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(var(--theme-secondary-rgb), 0.2);
 }

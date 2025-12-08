@@ -1,62 +1,89 @@
 export default function details() {
-  // Find all paragraphs that start with ???
-  // We use a tree walker or just iterate p tags to find potential candidates
-  // However, querySelectorAll('p') is usually enough for top-level content
-  const paragraphs = Array.from(document.querySelectorAll('p'));
+  document.querySelectorAll('p').forEach(p => {
+    // Quick check: does it look like a details block?
+    if (!p.textContent.trim().startsWith('???')) return;
 
-  for (const p of paragraphs) {
-    const text = p.textContent.trim();
-    if (!text.startsWith('???')) continue;
+    // 1. Detect Split Point (Newline or BR)
+    const childNodes = Array.from(p.childNodes);
+    let splitNodeIndex = -1; 
+    let textSplitIndex = -1; // Index within the text node
+    
+    for (let i = 0; i < childNodes.length; i++) {
+        const node = childNodes[i];
+        if (node.nodeType === Node.TEXT_NODE) {
+            const idx = node.textContent.indexOf('\n');
+            if (idx !== -1) {
+                splitNodeIndex = i;
+                textSplitIndex = idx;
+                break;
+            }
+        } else if (node.tagName === 'BR') {
+            splitNodeIndex = i;
+            break;
+        }
+    }
 
-    // This is a candidate. formatting is "??? Summary Text"
-    // The previous implementation used "question-answer" divs, but here we want to modify the DOM structure.
+    // 2. Build Components
+    const details = document.createElement('details');
+    details.className = 'generated-details';
     
-    // 1. Create the details structure
-    const detailsEl = document.createElement('details');
-    // Add a class for styling if needed, matching the requested native feel or potentially "question-answer" for backward compat logic if desired, 
-    // but user asked for "details element".
-    detailsEl.classList.add('generated-details'); 
-
-    // 2. Create summary
-    const summaryText = text.substring(3).trim();
-    const summaryEl = document.createElement('summary');
-    summaryEl.textContent = summaryText;
-    detailsEl.appendChild(summaryEl);
-
-    // 3. Find the content
-    // The content is expected to be the *next sibling* element. 
-    // In markdown, an indented line after a paragraph usually becomes a <pre><code> block if it follows a blank line,
-    // or sometimes just joins the paragraph if no blank line (but ??? usually implies a distinct block).
-    // If the user writes:
-    // ??? Question
-    //     Answer indented
-    // Markdig might render: <p>??? Question</p> <pre><code>Answer indented</code></pre>
+    const summary = document.createElement('summary');
+    // Direct title content (styling handles the icons via pseudo-elements)
     
-    const nextSibling = p.nextElementSibling;
+    const content = document.createElement('div');
     
-    // We'll wrap the content in a div to ensure valid HTML inside details (though details can directly contain flow content)
-    const contentDiv = document.createElement('div');
-    
-    if (nextSibling) {
-      // Logic: Is the next sibling "part" of this details? 
-      // User said "indented next line". 
-      // If it's a <pre>, it's definitely the indented block.
-      // If it's a <ul>, <p>, etc, it might be what they meant if they didn't indent code-style but just started a new block.
-      // We will assume the immediately following block element is the content.
+    // 3. Distribute Nodes
+    if (splitNodeIndex === -1) {
+        // Inline Mode: No split inside paragraph. All content is summary.
+        childNodes.forEach(node => summary.appendChild(node));
         
-      // Move the sibling into the content div
-      // specific check: if next sibling matches another ???, we shouldn't consume it (unexpected case, but good safety)
-      // but usually the next sibling is the content.
-      
-      // Clone/Move
-      contentDiv.appendChild(nextSibling); // This removes nextSibling from its current parent
+        // Check for Block Mode (content is in next sibling element)
+        const next = p.nextElementSibling;
+        if (next) {
+            content.appendChild(next);
+        }
+    } else {
+        // Split Mode: Distribute nodes based on split point
+        for (let i = 0; i < childNodes.length; i++) {
+            const node = childNodes[i];
+            
+            if (i < splitNodeIndex) {
+                summary.appendChild(node);
+            } else if (i === splitNodeIndex) {
+                 if (textSplitIndex !== -1) {
+                     // Text node split
+                     const text = node.textContent;
+                     const textBefore = text.substring(0, textSplitIndex);
+                     const textAfter = text.substring(textSplitIndex); 
+                     
+                     if (textBefore.trim()) summary.appendChild(document.createTextNode(textBefore));
+                     if (textAfter.trim()) content.appendChild(document.createTextNode(textAfter.trim()));
+                 }
+                 // If BR, we effectively drop it as it consumed by the split action
+            } else {
+                content.appendChild(node);
+            }
+        }
     }
     
-    detailsEl.appendChild(contentDiv);
-
-    // 4. Replace the original <p> with the new <details>
-    if (p.parentNode) {
-      p.parentNode.replaceChild(detailsEl, p);
+    // 4. Clean '???' from Title
+    // Find the first text node in the summary and strip the prefix
+    const summaryNodes = Array.from(summary.childNodes);
+    for (const node of summaryNodes) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            // Regex handles optional whitespace and the three question marks
+            // Only replace the START of the text
+            const newText = node.textContent.replace(/^\s*\?{3}\s*/, '');
+            if (newText !== node.textContent) {
+                node.textContent = newText;
+                break; // Only strip once
+            }
+        }
     }
-  }
+
+    details.appendChild(summary);
+    details.appendChild(content);
+    
+    p.replaceWith(details);
+  });
 }
