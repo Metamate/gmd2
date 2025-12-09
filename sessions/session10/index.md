@@ -7,6 +7,7 @@
 - [Data Locality](https://gameprogrammingpatterns.com/data-locality.html)
 - [Data Oriented Design](https://www.youtube.com/watch?v=WwkuAqObplU) + (configs, JSON, scriptable data)
 - ECS
+- Performance + profiling (basic stopwatch stuff, allocations, etc., like in above video)
 - Shaders & Effects
   - Transitions
   - Color Swapping
