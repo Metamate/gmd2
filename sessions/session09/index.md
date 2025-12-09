@@ -5,3 +5,4 @@
 - Custom UI
 - GUIs, UI Library (Gum)
 - RPG Mechanics
+- Separating UI from data/logic (MVVM, MVP) - maybe mvvm/mvp are not applicable here

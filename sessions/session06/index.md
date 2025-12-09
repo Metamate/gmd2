@@ -3,11 +3,11 @@
 - Top-Down Perspective
 - Infinite Dungeon Generation
 - Hitboxes/Hurtboxes
-- Events
 - Screen Scrolling
 - Data-Driven Design
-- Observer Pattern
+- Events, Observer Pattern / Event Bus
 - Event Queue?
+
 
 ## Game AI
 
@@ -21,8 +21,6 @@ Some basic pathfinding AI for the game?
 
 [Event Queue](https://gameprogrammingpatterns.com/event-queue.html)
 
-## Spatial Partitioning
 
-[Spatial Partition](https://gameprogrammingpatterns.com/spatial-partition.html)
-- relate to world gen? 
+## Spatial Partitioning <- Maybe have it here in relation to world gen? (also somewhat covered in physics)
 

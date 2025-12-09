@@ -3,11 +3,10 @@
 - Packaging and Publishing
 - Abstract Factory Pattern vs Factory Method? / [Prototype Pattern](https://gameprogrammingpatterns.com/prototype.html)
 - [Object Pool](https://gameprogrammingpatterns.com/object-pool.html)
-- [Component Pattern](https://gameprogrammingpatterns.com/component.html)
-- [Components](https://gavsdevblog.wordpress.com/2016/09/04/monogame-components-and-services/)
 - [Flyweight Pattern](https://gameprogrammingpatterns.com/flyweight.html)
 - [Data Locality](https://gameprogrammingpatterns.com/data-locality.html)
 - [Data Oriented Design](https://www.youtube.com/watch?v=WwkuAqObplU) + (configs, JSON, scriptable data)
+- ECS
 - Shaders & Effects
   - Transitions
   - Color Swapping
@@ -20,3 +19,10 @@
   - Pathfinding basics (A*)
   - Steering behaviors (seek & flee)
 - (have some cool shaders and effects in the geometry wars demo)
+
+## DOD
+
+Struct of Arrays (SoA) vs. Array of Structures (AoS): Structuring memory for SIMD (Single Instruction, Multiple Data) processing.
+
+## ECS
+MAYBE include ECS-architecture overview and explanation? Maybe brief overview, maybe implement in game via MonoGame.Extended.
