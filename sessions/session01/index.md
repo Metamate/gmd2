@@ -53,3 +53,8 @@ For a more comprehensible explanation of the monogame game loop, see [What is th
 ## Sound Effects
 
 You can make your own 8-bit style sound effects using [bfxr.net](https://www.bfxr.net/).
+
+## Knowledge Test
+
+??? question "What is the difference between a game engine and a framework?"
+    A game engine is a complete solution for game development, while a framework is a set of tools and libraries that provide a foundation for game development.

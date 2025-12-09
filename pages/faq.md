@@ -12,7 +12,7 @@
     A basic understanding of Object-Oriented Programming (OOP) and C#.
 
 ??? question "What are the requirements for the course project?"
-    Please see the [project](./project.md) section for more information.
+    Please see the [Project](./project.md) section for more information.
 
 ??? question "What is the exam like?"
-    The exam is an oral exam where you draw a question from a pool of questions and have to answer it. For more information, see the [exam](./exam.md) section.
+    The exam is an oral exam where you draw a question from a pool of questions and have to answer it. For more information, see the [Exam](./exam.md) section.
