@@ -5,7 +5,7 @@
 - Hitboxes/Hurtboxes
 - Screen Scrolling
 - Data-Driven Design
-- Events, Observer Pattern / Event Bus
+- Events, Observer Pattern / Event Bus + messaging systems/message bus (this is sort of the same?)
 - Event Queue?
 
 
