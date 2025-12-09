@@ -1,5 +1,7 @@
 # 01 Pong
 
+Quick Pong introduction. Show GIF of final Pong game. Link to source code.
+
 ## Today's Goal
 
 "Make it work". We end up with a working, very basic game. The implementation will be "naive" in the sense that it doesn't consider good practices in terms of architecture and design, but it keeps things simple and gets us to a working prototype quickly.
@@ -12,19 +14,6 @@ By the end of the session, we will have a basic Pong game with:
 - Input
 - Basic state management
 - Audio
-
-## Today's Topics
-
-- MonoGame
-  - Game Loop Pattern
-  - Update Method Pattern
-- Pong
-  - Drawing Sprites & Text
-  - DeltaTime & Velocity
-  - Basic Game State
-  - Encapsulation
-  - Collision Detection
-  - Sound Effects
 
 ## MonoGame
 

@@ -8,3 +8,8 @@
 - Data-Driven Design
 - Observer Pattern
 - Event Queue?
+
+
+## Game AI
+
+Some basic pathfinding AI for the game?
