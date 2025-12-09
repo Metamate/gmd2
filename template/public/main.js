@@ -1,6 +1,5 @@
 import highlightActiveHeader from "./highlightActiveHeader.js"
 import details from "./details.js"
-//import questionAnswer from "./questionAnswer.js"
 
 export default {
   defaultTheme: "dark",
@@ -14,6 +13,5 @@ export default {
   start: () => {
     highlightActiveHeader()
     details()
-    //questionAnswer()
   },
 }

@@ -29,5 +29,5 @@ Overview of the course content.
 
 ## Test Your Knowledge
 
-??? What is the difference between a framework and an engine?
+??? question "What is the difference between a framework and an engine?"
     A framework provides a structure and set of tools for building applications, while an engine is a complete system that handles core functionality like rendering and physics.
