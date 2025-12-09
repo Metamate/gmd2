@@ -1,13 +1,19 @@
 :root {
   --theme-orange-dark-rgb: 231, 60, 0;
-  --theme-orange-dark-secondary-rgb: 96, 62, 51;
+  --theme-orange-dark-secondary-rgb: 105, 59, 46;
   --theme-orange-light-rgb: 212, 93, 53;
   --theme-orange-light-secondary-rgb: 229, 193, 179;
   --theme-grey-rgb: 108, 117, 125;
   --theme-orange-dark: rgba(var(--theme-orange-dark-rgb), 1);
-  --theme-orange-dark-secondary: rgba(var(--theme-orange-dark-secondary-rgb), 1);
+  --theme-orange-dark-secondary: rgba(
+    var(--theme-orange-dark-secondary-rgb),
+    1
+  );
   --theme-orange-light: rgba(var(--theme-orange-light-rgb), 1);
-  --theme-orange-light-secondary: rgba(var(--theme-orange-light-secondary-rgb), 1);
+  --theme-orange-light-secondary: rgba(
+    var(--theme-orange-light-secondary-rgb),
+    1
+  );
   --theme-grey: rgba(var(--theme-grey-rgb), 1);
 
   --bs-link-color-rgb: var(--theme-orange-light-rgb);
@@ -50,7 +56,7 @@ h1 {
   min-height: 3rem;
 }
 
-.navbar{
+.navbar {
   background-color: var(--theme-orange-primary);
 }
 
@@ -60,11 +66,11 @@ h1 {
   margin-right: 0.5rem;
 }
 
-.navbar #navbar form>input {
+.navbar #navbar form > input {
   background-color: rgba(var(--theme-orange-secondary-rgb), 0.4);
 }
 
-#search-results>.sr-items .sr-item>.item-href {
+#search-results > .sr-items .sr-item > .item-href {
   color: var(--theme-grey);
 }
 
@@ -89,7 +95,7 @@ details.generated-details > summary {
   cursor: pointer;
   position: relative;
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 1rem;
   padding: 0.5rem 1rem;
   margin: 0;
