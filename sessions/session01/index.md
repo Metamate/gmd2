@@ -13,19 +13,6 @@ By the end of the session, we will have a basic Pong game with:
 - Basic state management
 - Audio
 
-## Today's Topics
-
-- MonoGame
-  - Game Loop Pattern
-  - Update Method Pattern
-- Pong
-  - Drawing Sprites & Text
-  - DeltaTime & Velocity
-  - Basic Game State
-  - Encapsulation
-  - Collision Detection
-  - Sound Effects
-
 ## MonoGame
 
 - [What is MonoGame?](https://docs.monogame.net/articles/tutorials/building_2d_games/01_what_is_monogame/index.html)
@@ -43,7 +30,11 @@ By the end of the session, we will have a basic Pong game with:
 
 For a more comprehensible explanation of the monogame game loop, see [What is the Game Loop](https://docs.monogame.net/articles/getting_to_know/whatis/game_loop/index.html).
 
+## Content Pipeline
+
 ## Drawing Sprites
+
+- MG Coordinate System
 
 - [What is a sprite?](https://docs.monogame.net/articles/getting_to_know/whatis/graphics/WhatIs_Sprite.html)
 

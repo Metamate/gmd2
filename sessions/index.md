@@ -1,7 +1,7 @@
 # Sessions Overview
 
 | Session | Topic                                | Summary                                                                                                  |
-| -- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| -: | ----------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | 01 | [Pong](session01/index.md)                | The basic principles of making a game in MonoGame. |
 | 02 | [Flappy Bird](session02/index.md)         | Organizing and designing our game as it grows. Building a game engine of reusable components. |
 | 03 | [Snake](session03/index.md)               | |
