@@ -22,12 +22,3 @@ graph LR
 
 
 This approach allows you to learn theory at your own pace, enabling us to focus class time on practical application and problem-solving. Active preparation and participation is key to your success in this course.
-
-## Course Overview
-
-Overview of the course content.
-
-## Test Your Knowledge
-
-??? question "What is the difference between a framework and an engine?"
-    A framework provides a structure and set of tools for building applications, while an engine is a complete system that handles core functionality like rendering and physics.

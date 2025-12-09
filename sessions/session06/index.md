@@ -9,7 +9,20 @@
 - Observer Pattern
 - Event Queue?
 
-
 ## Game AI
 
 Some basic pathfinding AI for the game?
+
+## Observer Pattern
+
+[Observer Pattern](https://gameprogrammingpatterns.com/observer.html)
+
+## Event Queue
+
+[Event Queue](https://gameprogrammingpatterns.com/event-queue.html)
+
+## Spatial Partitioning
+
+[Spatial Partition](https://gameprogrammingpatterns.com/spatial-partition.html)
+- relate to world gen? 
+

@@ -20,9 +20,17 @@ We look at state management and building out our "game engine" through a class l
 
 - [Architecture, Performance, and Games](https://gameprogrammingpatterns.com/architecture-performance-and-games.html)
 
+## Singleton Pattern
+
+- [Singleton](https://gameprogrammingpatterns.com/singleton.html)
+
+## Service Locator Pattern
+
+- [Service Locator](https://gameprogrammingpatterns.com/service-locator.html) - maybe later?
+
 ## State Pattern
 
-[State Pattern](https://gameprogrammingpatterns.com/state.html)
+- [State Pattern](https://gameprogrammingpatterns.com/state.html)
 
 | hello                                                                        |
 | :--------------------------------------------------------------------------: |

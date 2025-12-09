@@ -1,12 +1,13 @@
 # 10 Geometry Wars
 
 - Packaging and Publishing
-- Abstract Factory Pattern vs Factory Method? / Prototype Pattern
-- Object pool?
-- Component Pattern ?
-- Flyweight?
+- Abstract Factory Pattern vs Factory Method? / [Prototype Pattern](https://gameprogrammingpatterns.com/prototype.html)
+- [Object Pool](https://gameprogrammingpatterns.com/object-pool.html)
+- [Component Pattern](https://gameprogrammingpatterns.com/component.html)
+- [Components](https://gavsdevblog.wordpress.com/2016/09/04/monogame-components-and-services/)
+- [Flyweight Pattern](https://gameprogrammingpatterns.com/flyweight.html)
 - [Data Locality](https://gameprogrammingpatterns.com/data-locality.html)
-- [Data Oriented Design for Games](https://www.youtube.com/watch?v=WwkuAqObplU)
+- [Data Oriented Design](https://www.youtube.com/watch?v=WwkuAqObplU) + (configs, JSON, scriptable data)
 - Shaders & Effects
   - Transitions
   - Color Swapping
@@ -14,4 +15,8 @@
   - 2D Lights
   - Shadows
 - Particles
+- AI for games
+  - Finite State Machines (FSMs)
+  - Pathfinding basics (A*)
+  - Steering behaviors (seek & flee)
 - (have some cool shaders and effects in the geometry wars demo)
