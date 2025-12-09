@@ -140,3 +140,13 @@ details.generated-details > summary::after {
 details.generated-details[open] > summary::after {
   transform: rotate(90deg);
 }
+
+@media (min-width: 768px) {
+  .toc-offcanvas {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    align-self: start;
+  }
+}
