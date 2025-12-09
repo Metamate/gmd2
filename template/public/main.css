@@ -1,31 +1,31 @@
 :root {
-  --mg-orange-dark-rgb: 231, 60, 0;
-  --mg-orange-dark-secondary-rgb: 96, 62, 51;
-  --mg-orange-light-rgb: 212, 93, 53;
-  --mg-orange-light-secondary-rgb: 229, 193, 179;
-  --mg-grey-rgb: 108, 117, 125;
-  --mg-orange-dark: rgba(var(--mg-orange-dark-rgb), 1);
-  --mg-orange-dark-secondary: rgba(var(--mg-orange-dark-secondary-rgb), 1);
-  --mg-orange-light: rgba(var(--mg-orange-light-rgb), 1);
-  --mg-orange-light-secondary: rgba(var(--mg-orange-light-secondary-rgb), 1);
-  --mg-grey: rgba(var(--mg-grey-rgb), 1);
+  --theme-orange-dark-rgb: 231, 60, 0;
+  --theme-orange-dark-secondary-rgb: 96, 62, 51;
+  --theme-orange-light-rgb: 212, 93, 53;
+  --theme-orange-light-secondary-rgb: 229, 193, 179;
+  --theme-grey-rgb: 108, 117, 125;
+  --theme-orange-dark: rgba(var(--theme-orange-dark-rgb), 1);
+  --theme-orange-dark-secondary: rgba(var(--theme-orange-dark-secondary-rgb), 1);
+  --theme-orange-light: rgba(var(--theme-orange-light-rgb), 1);
+  --theme-orange-light-secondary: rgba(var(--theme-orange-light-secondary-rgb), 1);
+  --theme-grey: rgba(var(--theme-grey-rgb), 1);
 
-  --bs-link-color-rgb: var(--mg-orange-light-rgb);
-  --bs-link-hover-color-rgb: var(--mg-orange-dark-rgb);
+  --bs-link-color-rgb: var(--theme-orange-light-rgb);
+  --bs-link-hover-color-rgb: var(--theme-orange-dark-rgb);
 }
 
 [data-bs-theme="light"] {
-  --mg-orange-primary: var(--mg-orange-light);
-  --mg-orange-primary-rgb: var(--mg-orange-light-rgb);
-  --mg-orange-secondary: var(--mg-orange-light-secondary);
-  --mg-orange-secondary-rgb: var(--mg-orange-light-secondary-rgb);
+  --theme-orange-primary: var(--theme-orange-light);
+  --theme-orange-primary-rgb: var(--theme-orange-light-rgb);
+  --theme-orange-secondary: var(--theme-orange-light-secondary);
+  --theme-orange-secondary-rgb: var(--theme-orange-light-secondary-rgb);
 }
 
 [data-bs-theme="dark"] {
-  --mg-orange-primary: var(--mg-orange-light);
-  --mg-orange-primary-rgb: var(--mg-orange-light-rgb);
-  --mg-orange-secondary: var(--mg-orange-dark-secondary);
-  --mg-orange-secondary-rgb: var(--mg-orange-dark-secondary-rgb);
+  --theme-orange-primary: var(--theme-orange-light);
+  --theme-orange-primary-rgb: var(--theme-orange-light-rgb);
+  --theme-orange-secondary: var(--theme-orange-dark-secondary);
+  --theme-orange-secondary-rgb: var(--theme-orange-dark-secondary-rgb);
 }
 
 h1 {
@@ -34,9 +34,9 @@ h1 {
 
 #affix ul li a.active,
 #affix a.active {
-  color: var(--mg-orange-primary);
+  color: var(--theme-orange-primary);
   font-weight: bold;
-  border-left: 2px solid var(--mg-orange-primary);
+  border-left: 2px solid var(--theme-orange-primary);
   padding-left: 0.3rem;
   transition: all 0.2s ease-in-out;
 }
@@ -51,7 +51,7 @@ h1 {
 }
 
 .navbar{
-  background-color: var(--mg-orange-primary);
+  background-color: var(--theme-orange-primary);
 }
 
 .navbar-brand img {
@@ -61,11 +61,11 @@ h1 {
 }
 
 .navbar #navbar form>input {
-  background-color: rgba(var(--mg-orange-secondary-rgb), 0.4);
+  background-color: rgba(var(--theme-orange-secondary-rgb), 0.4);
 }
 
 #search-results>.sr-items .sr-item>.item-href {
-  color: var(--mg-grey);
+  color: var(--theme-grey);
 }
 
 /*******************************************************************************
@@ -73,7 +73,7 @@ h1 {
 *******************************************************************************/
 
 details.generated-details {
-  border: 0.075rem solid var(--mg-orange-primary);
+  border: 0.075rem solid var(--theme-orange-primary);
   border-radius: 0.2rem;
   margin: 1rem 0;
   background-color: var(--bs-body-bg);
@@ -81,7 +81,7 @@ details.generated-details {
 }
 
 details.generated-details:focus-within {
-  box-shadow: 0 0 0 0.2rem rgba(var(--mg-orange-primary-rgb), 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(var(--theme-orange-primary-rgb), 0.25);
 }
 
 details.generated-details > summary {
@@ -93,7 +93,7 @@ details.generated-details > summary {
   gap: 1rem;
   padding: 0.5rem 1rem;
   margin: 0;
-  background-color: var(--mg-orange-primary);
+  background-color: var(--theme-orange-primary);
   color: #fff;
   outline: none;
 }
@@ -105,7 +105,7 @@ details.generated-details > summary::-webkit-details-marker {
 
 details.generated-details > div {
   padding: 1rem;
-  background-color: rgba(var(--mg-orange-primary-rgb), 0.4);
+  background-color: rgba(var(--theme-orange-primary-rgb), 0.4);
 }
 
 details.generated-details > summary::before {
