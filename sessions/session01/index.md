@@ -4,7 +4,7 @@ Quick Pong introduction. Show GIF of final Pong game. Link to source code.
 
 ## Today's Goal
 
-"Make it work". We end up with a working, very basic game. The implementation will be "naive" in the sense that it doesn't consider good practices in terms of architecture and design, but it keeps things simple and gets us to a working prototype quickly.
+"Make it work". We end up with a working, very basic game. The implementation will be "naive" in the sense that it doesn't consider good practices in terms of architecture and design, but it keeps things simple and gets us to a working prototype relatively quickly.
 
 By the end of the session, we will have a basic Pong game with:
 
@@ -31,6 +31,8 @@ By the end of the session, we will have a basic Pong game with:
 |                 **Figure 1-1: Lifecycle of a MonoGame game**                 |
 
 For a more comprehensible explanation of the monogame game loop, see [What is the Game Loop](https://docs.monogame.net/articles/getting_to_know/whatis/game_loop/index.html).
+
+You own the loop (unlike in Unity). This means that you have to manually call update, it is not done for you.
 
 ## Content Pipeline
 
