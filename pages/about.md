@@ -2,7 +2,7 @@
 
 ## Course Title
 
-Game Development 2 (SPL2)
+Game Development 2 (GMD2)
 
 ## ECTS
 
@@ -11,7 +11,8 @@ Game Development 2 (SPL2)
 ## Prerequisites
 
 The student must be familiar with:
-- Object Oriented Programming basics 
+
+- Object-oriented programming basics
 
 ## Purpose
 
@@ -56,32 +57,32 @@ Game Architecture, Software Design Principles & Patterns, Game Loop, Rendering, 
 
 ## Teaching methods and study activities
 
-12 sessions (48 lessons). These lessons consist of discussion of theory and exercises. The total workload of the 
-student is expected to be around 140 hours. 
-The course will include one course project. 
+12 sessions (48 lessons). These lessons consist of discussion of theory and exercises, as well as project work. The total workload of the student is expected to be around 140 hours. The course will include one course project.
 
 ## Exam
 
-Exam prerequisites: 
-1. Attendance (≥ 75%) 
+Exam prerequisites:
+
+1. Attendance (≥ 75%)
 
 Type of exam:
-Individual oral exam, 20 minutes, without preparation. 
-The student will draw from a pool of known questions and is expected to reference their course project as part of 
-the answer. This involves demonstrating and potentially writing or modifying source code during the exam. 
-The final grade will be based on an overall assessment of the project presented and the oral examination. 
-Internal assessment. 
+Individual oral exam, 20 minutes, without preparation.
+The student will draw from a pool of known questions and is expected to reference their course project as part of the answer. This involves demonstrating and potentially writing or modifying source code during the exam. The final grade will be based on an overall assessment of the project presented and the oral examination. Internal assessment.
 
 Tools allowed:
 All
 
-Re-exam: 
-Same as the ordinary exam. 
+Re-exam:
+Same as the ordinary exam.
 
-## Grading criteria 
+## Grading criteria
 
 Grading based on the Danish 7-point scale.
 
 ## Course Responsible
 
 Jakob Trigger Knop (JKNR)
+
+## Course type
+
+Compulsory for Software Engineering XR, 2. semester
