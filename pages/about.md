@@ -1,59 +1,88 @@
-# About The Course
+# Course Description
 
-Some meta-text about the course and teachers.
+## Course Title
 
-## Course description
+Game Development 2 (GMD2)
 
-The course introduces students to engine-level game programming using the MonoGame framework. Unlike Unity, MonoGame requires explicit control over rendering, game loops, asset pipelines, collision, scenes, and architecture. The focus is on teaching software engineering in a game context: architecture, design patterns, decoupling, component design, testing, and data-driven systems.
+## ECTS
 
-[todo: reword "engine level"?]
+5
 
-### Learning Outcomes
+## Prerequisites
 
-#### Knowledge
+The student must be familiar with:
+
+- Object-oriented programming basics
+
+## Purpose
+
+The course introduces students to engine-level game programming using a low-level framework. Students learn by implementing classic video games, gaining direct control over essential systems like game loop, rendering, asset pipeline, collisions and physics. The purpose is to teach software engineering in a game context, including architecture, design patterns, decoupling, component systems and data-driven design.
+
+## Learning Outcomes
+
+### Knowledge
 
 Students can:
 
 - Explain the structure of a traditional game engine (game loop, update/draw pipeline).
-- Describe common game architecture patterns (component systems, managers, services, state machines).
+- Identify recurring design patterns in games (e.g. state, observer, command).
+- Describe common game architecture solutions (e.g. component systems, services, state machines).
 - Explain collision detection, tile-based level systems, and input handling.
-- Identify performance bottlenecks in C# game code.
-- Describe Git workflows suitable for code-heavy projects.
+- Identify performance bottlenecks in game code.
 
-#### Skills
+### Skills
 
 Students can:
 
-- Implement a complete game loop using MonoGame.
-- Architect systems using separation of concerns and design patterns.
+- Implement a complete game loop using a simple game framework.
+- Apply core object-oriented design principles to design robust, flexible, and maintainable game systems.
+- Implement common game-specific design patterns to solve recurring design problems in gameplay programming.
 - Implement scenes, UI systems, input systems, entity systems, collision detection, and basic physics.
-- Refactor game code for readability, maintainability, and extensibility.
 - Implement serialization for simple save/load systems.
+- Refactor game code for readability, maintainability, and extensibility.
 - Use debugging and profiling tools effectively.
 
-#### Competences
+### Competences
 
 Students can:
 
-- Work in small game development teams using Git, branching, merging, and reviews.
-- Produce a playable vertical slice with a well-structured internal architecture.
-- Document design decisions and system architecture.
-- Reflect on engineering challenges in a short postmortem.
+- Produce a playable vertical slice for a game with a well-structured internal architecture.
+- Document software designs using visual notation, such as UML class diagrams, to effectively communicate architectural decisions.
+- Critically analyze and evaluate the structure of an existing game project and propose design improvements based on established principles.
+- Demonstrate an understanding of the trade-offs between different architectural choices (e.g., performance vs. flexibility).
 
-### Topics
+## Topics
 
-Software Design Principles, Architectural Patterns, and Design Patterns in the context of game development. [TODO: add game engine context, and oop-concepts]
+Game Architecture, Software Design Principles & Patterns, Game Loop, Rendering, Input Handling, Asset Management, Collision Detection, Physics, Tilemaps, Serialization, Component-Based Design, Finite State Machines, Service Locator, Observer, Command, Prototype, Object Pooling, Spatial Partitioning, Data-Driven Design, Optimization.
 
----
+## Teaching methods and study activities
 
-Upon successful completion of the course, the student will be able to:
+12 sessions (48 lessons). These lessons consist of discussion of theory and exercises, as well as project work. The total workload of the student is expected to be around 140 hours. The course will include one course project.
 
-Analyze and Evaluate: Critically analyze and evaluate the structure of an existing MonoGame project and propose design improvements based on established principles.
+## Exam
 
-Apply Principles: Apply core Object-Oriented Design (OOD) principles (e.g., SOLID) and game programming patterns (e.g., Component-Based Architecture, State Machines) to design robust, flexible, and maintainable game systems.
+Exam prerequisites:
 
-Implement Architecture: Implement a clear software architecture for a 2D MonoGame project, demonstrating an understanding of the trade-offs between different architectural choices (e.g., performance vs. flexibility).
+1. Attendance (≥ 75%)
 
-Utilize Patterns: Identify and implement common C# and game-specific design patterns (e.g., Factory, Observer, Command) to solve recurring design problems in gameplay programming.
+Type of exam:
+Individual oral exam, 20 minutes, without preparation.
+The student will draw from a pool of known questions and is expected to reference their course project as part of the answer. This involves demonstrating and potentially writing or modifying source code during the exam. The final grade will be based on an overall assessment of the project presented and the oral examination. Internal assessment.
 
-Document and Communicate: Document software designs using visual notation, such as UML Class Diagrams and Component Diagrams, to effectively communicate architectural decisions.
+Tools allowed:
+All
+
+Re-exam:
+Same as the ordinary exam.
+
+## Grading criteria
+
+Grading based on the Danish 7-point scale.
+
+## Course Responsible
+
+Jakob Trigger Knop (JKNR)
+
+## Course type
+
+Compulsory for Software Engineering XR, 2. semester
