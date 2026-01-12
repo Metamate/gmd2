@@ -1,8 +1,8 @@
-# Course Description
+# Game Development 2
 
-## Course Title
+## Code
 
-Game Development 2 (GMD2)
+XR-GMD2
 
 ## ECTS
 
@@ -16,13 +16,13 @@ The student must be familiar with:
 
 ## Purpose
 
-The course introduces students to engine-level game programming using a low-level framework. Students learn by implementing classic video games, gaining direct control over essential systems like game loop, rendering, asset pipeline, collisions and physics. The purpose is to teach software engineering in a game context, including architecture, design patterns, decoupling, component systems and data-driven design.
+The course introduces the student to engine-level game programming using a low-level game framework. The student learns by implementing classic video games, gaining direct control over essential systems like game loop, rendering, asset pipeline and game physics. The purpose is to teach software engineering in a game context, including architecture, design patterns, decoupling, component systems and data-driven design.
 
 ## Learning Outcomes
 
 ### Knowledge
 
-Students can:
+The student will be able to:
 
 - Explain the structure of a traditional game engine (game loop, update/draw pipeline).
 - Identify recurring design patterns in games (e.g. state, observer, command).
@@ -32,19 +32,19 @@ Students can:
 
 ### Skills
 
-Students can:
+The student will be able to:
 
-- Implement a complete game loop using a simple game framework.
+- Implement a complete game loop using a low-level game framework.
 - Apply core object-oriented design principles to design robust, flexible, and maintainable game systems.
 - Implement common game-specific design patterns to solve recurring design problems in gameplay programming.
-- Implement scenes, UI systems, input systems, entity systems, collision detection, and basic physics.
+- Implement scenes, UI systems, input systems, entity systems, collision detection, and basic game physics.
 - Implement serialization for simple save/load systems.
 - Refactor game code for readability, maintainability, and extensibility.
 - Use debugging and profiling tools effectively.
 
 ### Competences
 
-Students can:
+The student will be able to:
 
 - Produce a playable vertical slice for a game with a well-structured internal architecture.
 - Document software designs using visual notation, such as UML class diagrams, to effectively communicate architectural decisions.
@@ -53,11 +53,11 @@ Students can:
 
 ## Topics
 
-Game Architecture, Software Design Principles & Patterns, Game Loop, Rendering, Input Handling, Asset Management, Collision Detection, Physics, Tilemaps, Serialization, Component-Based Design, Finite State Machines, Service Locator, Observer, Command, Prototype, Object Pooling, Spatial Partitioning, Data-Driven Design, Optimization.
+Game Architecture, Software Design Principles & Patterns, Game Loop, Rendering, Input Handling, Asset Pipeline, Collision Detection, Game Physics, Tilemaps, Serialization, Component-Based Design, Finite State Machines, Service Locator, Observer, Command, Prototype, Object Pooling, Spatial Partitioning, Data-Driven Design, Optimization.
 
 ## Teaching methods and study activities
 
-12 sessions (48 lessons). These lessons consist of discussion of theory and exercises, as well as project work. The total workload of the student is expected to be around 140 hours. The course will include one course project.
+12 sessions (48 lessons). Lessons consist of discussion of theory and exercises, as well as project work. The total workload of the student is expected to be around 140 hours. The course includes one course project.
 
 ## Exam
 
@@ -82,6 +82,10 @@ Grading based on the Danish 7-point scale.
 ## Course Responsible
 
 Jakob Trigger Knop (JKNR)
+
+## Valid From
+
+01.02.2026
 
 ## Course type
 
