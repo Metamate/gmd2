@@ -67,7 +67,7 @@ Exam prerequisites:
 
 Type of exam:
 Individual oral exam, 20 minutes, without preparation.
-The student will draw from a pool of known questions and is expected to reference their course project as part of the answer. This involves demonstrating and potentially writing or modifying source code during the exam. The final grade will be based on an overall assessment of the project presented and the oral examination. Internal assessment.
+The student will draw from a pool of known questions and is expected to reference their course project as part of the answer. This involves analyzing source code, as well as potentially writing or modifying source code during the exam. The final grade will be based on an overall assessment of the project presented and the oral examination. Internal assessment.
 
 Tools allowed:
 All

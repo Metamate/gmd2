@@ -67,7 +67,7 @@ Eksamensforudsætninger:
 
 Eksamensform:
 Individuel mundtlig eksamen, 20 minutter, uden forberedelse.
-Den studerende trækker fra en pulje af kendte spørgsmål og forventes at referere til deres kursusprojekt som en del af svaret. Dette indebærer demonstration og potentielt skrivning eller ændring af kildekode under eksamen. Den endelige karakter vil være baseret på en samlet vurdering af det præsenterede projekt og den mundtlige eksamination. Intern censur.
+Den studerende trækker fra en pulje af kendte spørgsmål og forventes at referere til deres kursusprojekt som en del af svaret. Dette indebærer analysering af kildekode og potentielt skrivning eller ændring af kildekode under eksamen. Den endelige karakter vil være baseret på en samlet vurdering af det præsenterede projekt og den mundtlige eksamination. Intern censur.
 
 Tilladte hjælpemidler:
 Alle
