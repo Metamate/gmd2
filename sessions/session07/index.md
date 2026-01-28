@@ -4,7 +4,7 @@
   - Box2D
   - Vectors, velocity, acceleration
   - Basic kinematics, rigidbodies
-  - AABB collision detection
+  - AABB collision detection (revised?)
   - Circle collision detection
   - Bounding boxes?
   - Collision response/resolution (separating axis, penetration correction)

@@ -4,11 +4,13 @@
 
 Show off!
 
+Everybody must upload the GitHub link of their game project (to assignment on itslearning).
+
 ## Exam Preparation
 
 Bla bla.
 
-### Example Exam Questions (Under Construction)
+### Exam Questions (Under Construction)
 
 1. Game Loop & Architecture
    - Explain the Update/Draw separation in MonoGame.

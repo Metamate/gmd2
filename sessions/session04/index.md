@@ -1,3 +1,7 @@
 # 04 Project Work
 
-- Game Design Document
+## Project Setup
+
+## Game Design Document
+
+## Version Control
