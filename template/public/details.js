@@ -88,8 +88,6 @@ export default function details() {
             }
         }
     }
-    
-    // 4. (Clean step removed as logic is integrated)
 
     details.appendChild(summary);
     details.appendChild(content);

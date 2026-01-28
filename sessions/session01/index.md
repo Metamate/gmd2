@@ -1,5 +1,7 @@
 # 01 Pong
 
+![Pong](~/images/session01/pong.gif)
+
 Quick Pong introduction. Show GIF of final Pong game. Link to source code.
 
 ## Today's Goal
@@ -26,7 +28,7 @@ By the end of the session, we will have a basic Pong game with:
 - [Game Loop Pattern](https://gameprogrammingpatterns.com/game-loop.html)
 - [Update Method Pattern](https://gameprogrammingpatterns.com/update-method.html)
 
-| ![Figure 1-1: Lifecycle of a MonoGame game](~/images/monogame-lifecycle.png) |
+| ![Figure 1-1: Lifecycle of a MonoGame game](~/images/session01/monogame-lifecycle.png) |
 | :--------------------------------------------------------------------------: |
 |                 **Figure 1-1: Lifecycle of a MonoGame game**                 |
 
