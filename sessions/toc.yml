@@ -1,16 +1,16 @@
 - name: Sessions
 - href: session01/index.md
-- href: session02/index.md
-- href: session03/index.md
-- href: session04/index.md
-- href: session05/index.md
-- href: session06/index.md
-- href: session07/index.md
-- href: session08/index.md
-- href: session09/index.md
-- href: session10/index.md
-- href: session11/index.md
-- href: session12/index.md
+# - href: session02/index.md
+# - href: session03/index.md
+# - href: session04/index.md
+# - href: session05/index.md
+# - href: session06/index.md
+# - href: session07/index.md
+# - href: session08/index.md
+# - href: session09/index.md
+# - href: session10/index.md
+# - href: session11/index.md
+# - href: session12/index.md
 
 # Example of nested navigation
 # - href: session13/index.md
