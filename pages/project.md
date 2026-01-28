@@ -1,10 +1,10 @@
 # Project
 
-For the GMD2 course project, you will implement a 2D game using the MonoGame Framework.
+For the GMD2 course project, you will be implementing a 2D game using the MonoGame Framework.
 
 Group size: 1-3 students
 
-The goal of the project is to create a simple 2D game that uses best practices for organizing and architecting a game project. That is, the project must include gameplay systems and design elements solved through patterns and principles taught in the course.
+The goal of the project is to create a simple 2D game that uses best practices for organizing and architecting a game project. That is, the project must include gameplay systems and design elements solved through patterns and principles taught in the course. You have free choice in which type of game you choose to create, as long as you keep the above considerations in mind.
 
 The source code of the project must be versioned using the git version control system and hosted on GitHub. By the final course session, the root of the repository must contain a README.md file containing key information on your project:
 
